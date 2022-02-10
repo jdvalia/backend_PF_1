@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF entrega 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <form action="http://localhost:8080/api/productos" method="POST">
+        <fieldset>
+            <legend>Carga de Productos</legend>
+            <input type="text" name="nombre", placeholder="Nombre del Producto" required>
+            <input type="text" name="descripcion", placeholder="Descripcion del Producto" required>
+            <input type="text" name="codigo", placeholder="Codigo del Producto" required>
+            <input type="number" name="precio", placeholder="Precio" required>
+            <input type="number" name="stock", placeholder="Stock" required>
+            <input type="url" name="foto", placeholder="Foto (URL)" required>
+            <button type="submit"> CARGAR </button>
+        </fieldset>
+    </form>
+    
+    <br><br>
+
+</body>
+</html>
